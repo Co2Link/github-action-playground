@@ -21,7 +21,7 @@ jobs:
         id: cache-primes
         uses: actions/cache@v3
         with:
-          path: 1.txt
+          path: 2.txt
           key: key-1
       - name: Generate dummy file
         if: steps.cache-primes.outputs.cache-hit != 'true'
